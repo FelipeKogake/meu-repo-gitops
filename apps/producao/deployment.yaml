@@ -4,7 +4,7 @@ metadata:
   name: minha-app
   namespace: producao
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: minha-app
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: minha-app
-          image: nginxdemos/hello
+          image: nginxdemos/hello:versao-que-nao-existe
           ports:
             - containerPort: 80
