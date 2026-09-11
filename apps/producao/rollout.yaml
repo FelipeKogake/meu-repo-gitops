@@ -18,6 +18,9 @@ spec:
           image: jonesprado/rollback-deployment
           ports:
             - containerPort: 80
+          env:
+            - name: VERSAO_TESTE
+              value: "2"
   strategy:
     canary:
       steps:
