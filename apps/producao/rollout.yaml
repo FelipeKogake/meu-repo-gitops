@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: minha-app
-          image: jonesprado/rollback-deployment:v2
+          image: jonesprado/rollback-deployment:v3
           ports:
             - containerPort: 80
           env:
